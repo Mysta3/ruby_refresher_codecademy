@@ -9,4 +9,10 @@ module RubyProject
   def self.hello(name = "World")
     "Hello, #{name}!"
   end
+
+  class Computer
+    def initialize()
+      
+    end
+  end
 end
