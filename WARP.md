@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-This is a Ruby gem project built with Bundler following standard Ruby gem conventions. The gem provides a simple greeting module (`RubyProject`) with both library and command-line interfaces.
+This is a Ruby project built with Bundler following standard Ruby gem conventions. The project is used for Ruby learning and practice, containing example classes like `Computer`, `Dog`, and `Account` that demonstrate various Ruby concepts including public/private methods, class initialization, and attribute accessors.
 
 ## Development Commands
 
@@ -68,14 +68,16 @@ bundle exec irb -r ruby_project
 ## Architecture
 
 ### Core Structure
-- `lib/ruby_project.rb` - Main module entry point with public API
+- `lib/ruby_project.rb` - Contains practice classes (`Computer`, `Dog`) for learning Ruby concepts
+- `lib/ruby_practice.rb` - Contains the `Account` class demonstrating public/private methods
 - `lib/ruby_project/version.rb` - Version constant following semantic versioning
-- `bin/ruby_project` - Executable CLI wrapper around the library
+- `bin/ruby_project` - Executable CLI wrapper (currently references missing RubyProject.hello method)
 
 ### Key Patterns
-- **Module-based API**: Main functionality exposed through `RubyProject` module class methods
-- **Version isolation**: Version stored in separate file for clean gem management  
-- **Dual interface**: Library can be used programmatically or via command line
+- **Practice Classes**: Multiple example classes (`Computer`, `Dog`, `Account`) demonstrating different Ruby concepts
+- **Public/Private Methods**: Classes show proper encapsulation with private helper methods
+- **Attribute Accessors**: Examples of `attr_reader`, `attr_accessor` usage
+- **Version isolation**: Version stored in separate file for clean gem management
 - **Standard gem structure**: Follows Bundler gem template conventions
 
 ### Test Structure
